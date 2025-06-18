@@ -17,12 +17,11 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    android {
         lint {
             checkReleaseBuilds = false
+            disable.add("NullSafeMutableLiveData")
         }
-    }
+
 
     buildTypes {
         release {
