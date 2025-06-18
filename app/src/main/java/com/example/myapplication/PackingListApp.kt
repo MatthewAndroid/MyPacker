@@ -3,15 +3,15 @@ package com.example.myapplication
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
-import androidx.navigation.compose.rememberNavController
 import com.example.myapplication.screens.AddItemScreen
 import com.example.myapplication.screens.PackingListScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 
 @Composable
 fun PackingListApp() {
-    val navController = rememberNavController()
+    val navController = rememberNavContoller()
 
     // Parallel arrays to store packing items data
     val names = remember { mutableStateListOf<String>() }
